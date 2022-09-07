@@ -2,6 +2,9 @@ set_preinit_iface() {
 	. /lib/functions.sh
 
 	case $(board_name) in
+	linksys,mr9000)
+		ifname=eth1
+		;;
 	aruba,ap-303| \
 	asus,rt-ac42u| \
 	asus,rt-ac58u| \
@@ -10,6 +13,7 @@ set_preinit_iface() {
 	glinet,gl-b1300| \
 	linksys,ea8300| \
 	linksys,mr8300| \
+	linksys,mr9000| \
 	meraki,mr33| \
 	zyxel,nbg6617)
 		ifname=eth0
