@@ -154,7 +154,8 @@ platform_do_upgrade() {
 		;;
 	linksys,ea6350v3 |\
 	linksys,ea8300 |\
-	linksys,mr8300)
+	linksys,mr8300 |\
+	linksys,mr9000)
 		platform_do_upgrade_linksys "$1"
 		;;
 	meraki,mr33)
